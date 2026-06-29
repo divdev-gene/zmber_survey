@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "seed": "ts-node --compiler-options '{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' scripts/seed.ts",
-    "seed:emails": "ts-node --compiler-options '{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' scripts/seed-emails.ts"
+    "seed": "ts-node --project scripts/tsconfig.json scripts/seed.ts",
+    "seed:emails": "ts-node --project scripts/tsconfig.json scripts/seed-emails.ts",
+    "export:data": "ts-node --project scripts/tsconfig.json scripts/export-data.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.106.2",

@@ -78,7 +78,7 @@ export function GapAnalysisChart({ data }: { data: DashboardData }) {
           options={{
             responsive: true,
             maintainAspectRatio: false,
-            layout: { padding: { bottom: 8 } },
+            layout: { padding: { top: 20, bottom: 8 } },
             plugins: { legend: { display: false } },
             scales: {
               y: {
